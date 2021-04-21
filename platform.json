@@ -31,6 +31,10 @@
     "zephyr": {
       "package": "framework-zephyr",
       "script": "builder/frameworks/zephyr.py"
+    },
+    "nrfconnect": {
+      "package": "framework-nrfconnect",
+      "script": "builder/frameworks/nrfconnect.py"
     }
   },
   "packages": {

@@ -185,6 +185,13 @@ if "zephyr" in env.get("PIOFRAMEWORK", []):
         exports={"env": env}
     )
 
+if "nrfconnect" in env.get("PIOFRAMEWORK", []):
+    env.SConscript(
+        join(platform.get_package_dir(
+            "framework-nrfconnect"), "scripts", "platformio", "platformio-build-pre.py"),
+        exports={"env": env}
+    )
+
 upload_protocol = env.subst("$UPLOAD_PROTOCOL")
 target_elf = None
 if "nobuild" in COMMAND_LINE_TARGETS:

@@ -30,7 +30,8 @@
   "frameworks": [
     "arduino",
     "mbed",
-    "zephyr"
+    "zephyr",
+    "nrfconnect"
   ],
   "name": "Nordic nRF52840-DK",
   "upload": {
